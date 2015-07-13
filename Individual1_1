@@ -1,0 +1,32 @@
+<script>
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Root">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Thing" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="IDThing" type="xs:string" />
+<xs:element name="Count_Thing" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+</script>
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD1.xsd"> Сотрудники: <!—обратите внимание на ссылку на xsd —> <br />
+
+<Thing>
+<IDThing>Код <br />сотр. &nbsp; Фамилия &nbsp; &nbsp; Имя &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Отчество &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Должность &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Дата приема на работу</IDThing> <br />
+<Count_Thing>1 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Иванов &nbsp; Игорь &nbsp;&nbsp;&nbsp; Александрович &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бухгалтер&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23.05.16</Count_Thing> <br />
+<Count_Thing>2&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Петров &nbsp; Максим &nbsp; &nbsp;Алексеевич&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Экономист&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.03.01</Count_Thing> <br />
+<Count_Thing>3&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Горшков &nbsp; Илья &nbsp; &nbsp; &nbsp;Иванович &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Программист&nbsp; &nbsp;05.02.15</Count_Thing> <br />
+<Count_Thing> 4&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Сидоров &nbsp; Александр &nbsp;&nbsp;Артемович&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Инженер&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04.11.12</Count_Thing> <br />
+<Count_Thing>5&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Малышев &nbsp; Алексей &nbsp; &nbsp;Сергеевич&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тракторист&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.02.13</Count_Thing> <br />
+
+</Thing>
+</Root>
